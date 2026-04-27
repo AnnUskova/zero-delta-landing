@@ -575,7 +575,7 @@ button { font: inherit; cursor: pointer; }
   flex: none;
   width: 20px;
   height: 20px;
-  background: url("http://localhost:3845/assets/58f97e59a9e7ab619984e5d1427b213b7a7ca25d.svg") center / 18px no-repeat;
+  background: url("assets/figma/58f97e59a9e7ab619984e5d1427b213b7a7ca25d.svg") center / 18px no-repeat;
   transform: scaleY(-1) rotate(180deg);
 }
 
