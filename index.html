@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1440" />
+  <title>Zero Delta — Cross-chain stablecoin clearinghouse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">
+          <img src="assets/logo.svg" alt="" />
+        </div>
+        <div class="brand__text">
+          <span>Zero Delta</span>
+          <span>by Glacis labs</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#" class="is-active" aria-current="page">Home</a>
+        <a href="#">Glacis Core</a>
+        <a href="#">AirLift</a>
+        <a href="#">Developers</a>
+        <a href="#">Blog</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" aria-label="Toggle theme">
+          <img src="assets/figma/f38c3e2c23a3796681338066bc70aa8c702633c2.svg" alt="" />
+        </button>
+        <button class="btn btn--ghost-blue">Contact us</button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__copy">
+        <h1 class="hero__title">One dollar in.<br/>One dollar out.</h1>
+        <p class="hero__lede">
+          A clearinghouse for cross-chain stablecoin settlement. Deterministic
+          delivery, non-custodial escrow, and proof-carrying receipts.
+        </p>
+        <div class="hero__ctas">
+          <button class="btn btn--solid">Talk to our team</button>
+          <button class="btn btn--outline">
+            Whitepaper
+            <span class="btn__icon" aria-hidden="true">
+              <img src="assets/figma/fa6668fdc66cad1d18fdf2709a003dda0c87c42a.svg" alt="" />
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero__media">
+        <video src="assets/coin.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats reveal-group" data-stagger>
+      <div class="stat">
+        <div class="stat__value">$600M+</div>
+        <div class="stat__label">Lifetime volume</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value">$1.3B</div>
+        <div class="stat__label">Annualized</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value">46</div>
+        <div class="stat__label">Chains supported</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value">90%</div>
+        <div class="stat__label">Stablecoins</div>
+      </div>
+    </section>
+
+    <!-- Why should I hold your stable -->
+    <section class="why">
+      <h2 class="why__title reveal">Why should I hold <span class="accent">your stable?</span></h2>
+
+      <div class="why__cards">
+        <article class="why-card">
+          <div class="why-card__media why-card__media--1"></div>
+          <div class="why-card__body">
+            <div class="eyebrow"><span class="eyebrow__bar"></span>01 / Flow</div>
+            <div class="why-card__copy">
+              <h3 class="why-card__title">Liquidity</h3>
+              <p class="why-card__text">Guarantee swapability between<br/>par assets.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="why-card">
+          <div class="why-card__media why-card__media--2"></div>
+          <div class="why-card__body">
+            <div class="eyebrow"><span class="eyebrow__bar"></span>02 / Access</div>
+            <div class="why-card__copy">
+              <h3 class="why-card__title">Convertibility</h3>
+              <p class="why-card__text">Holders know they can use the asset anytime.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="why-card">
+          <div class="why-card__media why-card__media--3"></div>
+          <div class="why-card__body">
+            <div class="eyebrow"><span class="eyebrow__bar"></span>03 / Yield</div>
+            <div class="why-card__copy">
+              <h3 class="why-card__title">Utility</h3>
+              <p class="why-card__text">Earn yield on passive capital.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="why-card">
+          <div class="why-card__media why-card__media--4"></div>
+          <div class="why-card__body">
+            <div class="eyebrow"><span class="eyebrow__bar"></span>04 / Grow</div>
+            <div class="why-card__copy">
+              <h3 class="why-card__title">Incentives</h3>
+              <p class="why-card__text">Issuance and above par redemption programs.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- The answer -->
+    <section class="answer">
+      <header class="answer__head">
+        <div class="kicker kicker--blue reveal">The answer</div>
+        <h2 class="answer__title reveal">Zero Delta</h2>
+        <p class="answer__lede reveal">
+          A clearinghouse, not a bridge. Asset swaps separated from
+          transportation, with at-par conversion across every supported stablecoin.
+        </p>
+      </header>
+
+      <div class="answer__grid">
+        <div class="answer__visuals">
+          <a class="tilted tilted--left" href="#glacis-core" aria-label="Glacis Core">
+            <span class="tilted__img">
+              <img src="assets/answer1.png" alt="" />
+            </span>
+            <span class="tilted__chips">
+              <span class="chip chip--solid">01 / Glacis core</span>
+              <span class="chip">Interchain security and routing</span>
+            </span>
+          </a>
+
+          <a class="tilted tilted--right" href="#airlift" aria-label="AirLift">
+            <span class="tilted__img">
+              <img src="assets/answer2.png" alt="" />
+            </span>
+            <span class="tilted__chips">
+              <span class="chip chip--solid">02 / Airlift</span>
+              <span class="chip">Cross chain transportation</span>
+            </span>
+          </a>
+        </div>
+
+        <ul class="answer__list reveal-group">
+          <li>At-par conversion of stablecoins</li>
+          <li>Single API to support all stablecoins in the network</li>
+          <li>Optimal Pool Composition Algorithm (OPCA)</li>
+          <li>Stablecoin liquidity as a service</li>
+          <li>Off-chain permissioned and KYB environment</li>
+          <li>Off-chain netting and clearing environment</li>
+          <li>Scalable beyond on-chain DeFi limitations</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Stacking sections: dark stays, light scrolls over it -->
+    <div class="stack">
+
+    <!-- Institutional dark section -->
+    <section class="dark stack__layer">
+      <h2 class="dark__title reveal">
+        Built for the institutions<br/>
+        <span class="dark__title--muted">that need it.</span>
+      </h2>
+
+      <div class="dark__cards reveal-group">
+        <article class="dcard">
+          <div class="dcard__body">
+            <h3 class="dcard__title">Wallets, fintechs, exchanges</h3>
+            <p class="dcard__text">
+              One SDK replaces dozens of bridge integrations, liquidity workflows,
+              and reconciliation pipelines. New corridors become available without code changes.
+            </p>
+          </div>
+          <a class="dcard__cta" href="#">
+            Integrate ZeroDelta
+            <span class="btn__icon" aria-hidden="true">
+              <img src="assets/figma/f65b6de5d0878e4ae3ada75c92f1cdd6ea4d70b4.svg" alt="" />
+            </span>
+          </a>
+        </article>
+
+        <article class="dcard">
+          <div class="dcard__body">
+            <h3 class="dcard__title">Funds and operations teams</h3>
+            <p class="dcard__text">
+              Deterministic settlement on specific rails. Privacy on the TEE path.
+              Audit-grade evidence on every transfer above institutional thresholds.
+            </p>
+          </div>
+          <a class="dcard__cta" href="#">
+            Integrate ZeroDelta
+            <span class="btn__icon" aria-hidden="true">
+              <img src="assets/figma/f65b6de5d0878e4ae3ada75c92f1cdd6ea4d70b4.svg" alt="" />
+            </span>
+          </a>
+        </article>
+
+        <article class="dcard">
+          <div class="dcard__body">
+            <h3 class="dcard__title">Stablecoin issuers and custodians</h3>
+            <p class="dcard__text">
+              Compliant rails for cross-chain volume. Participation in attestation and
+              validation. Structured counterparty boundaries with clear regulatory framing.
+            </p>
+          </div>
+          <a class="dcard__cta" href="#">
+            Integrate ZeroDelta
+            <span class="btn__icon" aria-hidden="true">
+              <img src="assets/figma/f65b6de5d0878e4ae3ada75c92f1cdd6ea4d70b4.svg" alt="" />
+            </span>
+          </a>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- Light section that scrolls over the dark one -->
+    <section class="traction stack__layer stack__layer--light">
+      <div class="traction__head">
+        <div class="kicker kicker--blue reveal">The traction</div>
+        <h2 class="traction__title traction__title--light reveal">
+          <span>Zero Delta</span>
+          <span class="traction__x">×</span>
+          <span>Securitize</span>
+        </h2>
+        <p class="traction__lede traction__lede--light reveal">
+          The new standard for institutional clearing<br/>
+          of stablecoins and tokenized assets.
+        </p>
+
+        <div class="traction__chips">
+          <span class="pill pill--light">BlackRock BUIDL</span>
+          <span class="pill pill--light">Apollo</span>
+          <span class="pill pill--light">Hamilton Lane</span>
+          <span class="pill pill--light">KKR</span>
+        </div>
+      </div>
+
+      <div class="lcards reveal-group">
+        <article class="lcard">
+          <div class="eyebrow"><span class="eyebrow__bar"></span>GTM: Tokenized assets</div>
+          <h3 class="lcard__title">ZeroDelta · AirLift</h3>
+          <p class="lcard__text">Compliant cross-chain asset routing for tokenized securities.</p>
+        </article>
+        <article class="lcard">
+          <div class="eyebrow"><span class="eyebrow__bar"></span>Predictive engine</div>
+          <h3 class="lcard__title">ZeroDelta · OPCA</h3>
+          <p class="lcard__text">Predictive liquidity engine for tokenized assets.</p>
+        </article>
+        <article class="lcard">
+          <div class="eyebrow"><span class="eyebrow__bar"></span>Compliance</div>
+          <h3 class="lcard__title">ZeroDelta · Clearinghouse</h3>
+          <p class="lcard__text">KYB / KYC market with verifiable netting.</p>
+        </article>
+      </div>
+    </section>
+
+    </div><!-- /.stack -->
+
+    <!-- The network around it -->
+    <section class="network">
+      <header class="network__head">
+        <h2 class="network__title"><span class="accent">The network</span> around it</h2>
+        <p class="network__lede">Built with operators, issuers, market makers, and the apps where users already are.</p>
+      </header>
+
+      <div class="network__rows">
+        <div class="netrow">
+          <div class="netrow__label">Distribution</div>
+          <div class="netrow__chips">
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/1e159f95817ea8d255c3bd8ad8da280f993d71d9.png" alt=""/></span>MetaMask</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/b41034d5a80e020135a37440825efc7b978b31bc.png" alt=""/></span>LI.FI</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/557bf2f0c526c68355d54f4db3dd5a60c8b14b3d.png" alt=""/></span>Infinex</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/e833e736c9f8bccf6376594417d08a9906bf87f7.png" alt=""/></span>Phantom</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/17264745447d76d298819b8b09b9b92bdd76ffaf.png" alt=""/></span>Socket</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/ad1a63b4e13cdd739e116576e8e3c7ba18373a9e.png" alt=""/></span>1inch</span>
+          </div>
+        </div>
+
+        <div class="netrow">
+          <div class="netrow__label">Onchain liquidity</div>
+          <div class="netrow__chips">
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/9efd33c49b92a189b4646015cffaf0e680f8e531.png" alt=""/></span>Binance US</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/6e0d58b2a37490b6d4dc9c5d63589c6f7f279c6b.png" alt=""/></span>Relay</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/adde072118940abec0e3ca0df1caa6e8a9f3834e.png" alt=""/></span>Across</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/3311ca53a75a287990ae2dfd014564649a119e57.png" alt=""/></span>Coinbase</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/79b852fd54c4928482cf9d25afc0695b8fb98203.png" alt=""/></span>Kraken</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/3799c51af8232f6f1ac0002df7a3fedcc100fb0e.png" alt=""/></span>OKX</span>
+          </div>
+        </div>
+
+        <div class="netrow">
+          <div class="netrow__label">Asset issuers</div>
+          <div class="netrow__chips">
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/cb510a6f10ff67a39a8f95846b558b099239c0cd.png" alt=""/></span>M0</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/7d612282b4c9aedc8c8732e35c06ca94bacf9c57.png" alt=""/></span>Paxos</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/e6d8c19de1f156afea60e53ed9101c89c54a50af.png" alt=""/></span>Brale</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/4177b9d8567f762c97404de872ed5d5a69affd50.png" alt=""/></span>Agora</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/6e7bc0442b595f426f8b0416426f92f53b3ea1c6.png" alt=""/></span>Securitize</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/d6045671a639130ecbe2928120f894d6d4581a2e.png" alt=""/></span>Superstate</span>
+          </div>
+        </div>
+
+        <div class="netrow">
+          <div class="netrow__label">Market makers</div>
+          <div class="netrow__chips">
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/b661fed2a28175883127fee795417a6dce6d79aa.png" alt=""/></span>Wintermute</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/acca7588bb76001e38d258fa46a5688337a87770.png" alt=""/></span>GSR</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/c9fc9a35c0ef6d0164914cc70c3e03dee7eedd87.png" alt=""/></span>Cumberland</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/317da812602523dd39c0b05e95dc83dd1c48ca89.png" alt=""/></span>Jump</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/aad2c5d3a68b5d2d84a43fdbe37711a6480b2e8b.png" alt=""/></span>BitGo</span>
+            <span class="logo-pill"><span class="logo-pill__img"><img src="assets/figma/2e802380b03154dca4e7af4c16e48055375cc5f8.png" alt=""/></span>Flowdesk</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founders / The team + CTA dark banner + footer -->
+    <section class="outro">
+      <div class="team">
+        <header class="team__head reveal">
+          <div class="kicker kicker--blue">Founders</div>
+          <h2 class="team__title">The team</h2>
+        </header>
+
+        <div class="team__cards reveal-group">
+          <article class="member">
+            <div class="member__photo">
+              <img src="assets/jacob.png" alt="" />
+            </div>
+            <div class="member__body">
+              <div class="eyebrow"><span class="eyebrow__bar"></span>CEO</div>
+              <div class="member__copy">
+                <h3 class="member__name">Jacob Blish</h3>
+                <p class="member__text">Prev JPMorgan, cofounder Spruce (YC W&rsquo;21). Ran BD for Lido from $100M to $20B.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="member">
+            <div class="member__photo">
+              <img src="assets/sam.png" alt="" />
+            </div>
+            <div class="member__body">
+              <div class="eyebrow"><span class="eyebrow__bar"></span>Co-founder, Product</div>
+              <div class="member__copy">
+                <h3 class="member__name">Sam Patel</h3>
+                <p class="member__text">Prev VMWare, Cisco. Late cofounder of Sommelier. Built all ML strategies and vault code.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="solved reveal">
+        <div class="solved__copy">
+          <h2 class="solved__title">
+            Cross-chain stablecoin settlement should be<br/>
+            <span class="solved__title--accent">a solved problem.</span>
+          </h2>
+          <p class="solved__lede">ZeroDelta is the clearinghouse that makes it so.</p>
+        </div>
+
+        <div class="solved__links">
+          <a href="#" class="solved-link">
+            <span>Talk to us</span>
+            <span class="solved-link__icon" aria-hidden="true">
+              <img src="assets/arrow-up-right.svg" alt="" />
+            </span>
+          </a>
+          <a href="#" class="solved-link">
+            <span>Whitepaper</span>
+            <span class="solved-link__icon" aria-hidden="true">
+              <img src="assets/arrow-up-right.svg" alt="" />
+            </span>
+          </a>
+          <a href="#" class="solved-link">
+            <span>Twitter</span>
+            <span class="solved-link__icon" aria-hidden="true">
+              <img src="assets/arrow-up-right.svg" alt="" />
+            </span>
+          </a>
+          <a href="#" class="solved-link">
+            <span>Email</span>
+            <span class="solved-link__icon" aria-hidden="true">
+              <img src="assets/arrow-up-right.svg" alt="" />
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span class="footer__mark">Footer</span>
+      </footer>
+    </section>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
