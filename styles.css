@@ -335,7 +335,10 @@ button { font: inherit; cursor: pointer; }
 
 .why-card__media {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 255px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
