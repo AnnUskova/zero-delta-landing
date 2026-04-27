@@ -812,15 +812,6 @@ button { font: inherit; cursor: pointer; }
   gap: 8px;
 }
 
-/* Light variant pills */
-.pill--light {
-  background: rgba(67, 88, 225, 0.06);
-  color: #4358e1;
-}
-.pill--light:hover {
-  background: var(--blue);
-  color: var(--white);
-}
 
 /* ---------- Light cards under traction ---------- */
 .lcards {
@@ -876,6 +867,16 @@ button { font: inherit; cursor: pointer; }
 .pill:hover {
   transform: translateY(-3px);
   background: rgba(118, 136, 255, 0.18);
+  color: var(--white);
+}
+
+/* Light variant pills (used on light traction section) */
+.pill.pill--light {
+  background: rgba(67, 88, 225, 0.06);
+  color: #4358e1;
+}
+.pill.pill--light:hover {
+  background: var(--blue);
   color: var(--white);
 }
 
