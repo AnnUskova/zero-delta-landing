@@ -1081,6 +1081,7 @@ button { font: inherit; cursor: pointer; }
 
 .solved {
   position: relative;
+  margin: 0 -48px;
   background: var(--dark);
   color: var(--white);
   border-radius: 52px;
