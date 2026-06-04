@@ -65,3 +65,56 @@
 
   io.observe(stats);
 })();
+
+// Use-case carousel: pin the card, swap slides based on scroll progress
+(() => {
+  const scroll = document.querySelector('.usecase-scroll');
+  const sticky = document.querySelector('.usecase-sticky');
+  const slides = [...document.querySelectorAll('.usecase-slide')];
+  if (!scroll || !sticky || slides.length === 0) return;
+
+  const N = slides.length;
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const stickyH = sticky.offsetHeight;
+    const travel = scroll.offsetHeight - stickyH;
+    const top = parseFloat(getComputedStyle(sticky).top) || 0;
+    let p = travel > 0 ? (top - scroll.getBoundingClientRect().top) / travel : 0;
+    p = Math.min(1, Math.max(0, p));
+    const seg = 1 / Math.max(1, N - 1);
+    slides.forEach((s, k) => {
+      if (k === 0) { s.style.transform = 'translateY(0)'; return; }
+      const local = Math.min(1, Math.max(0, (p - (k - 1) * seg) / seg));
+      s.style.transform = `translateY(${(1 - local) * 100}%)`;
+    });
+  };
+
+  const onScroll = () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+
+// Back-to-top button: show after scrolling down, smooth-scroll to top
+(() => {
+  const btn = document.querySelector('.scroll-top');
+  if (!btn) return;
+
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    btn.classList.toggle('is-visible', window.scrollY > 700);
+  };
+  window.addEventListener('scroll', () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
